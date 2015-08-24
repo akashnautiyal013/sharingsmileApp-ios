@@ -41,16 +41,16 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('policiesCtrl', function($scope) {
+  $scope.policies = [
+    { title: 'child education', id: 1 },
+    { title: 'women impowermwnt', id: 2 },
+    { title: 'oldies goldies', id: 3 },
+    { title: 'skill development', id: 4 },
+    { title: 'helth care', id: 5 },
+    { title: 'rular area development', id: 6 }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('policieCtrl', function($scope, $stateParams) {
 });
