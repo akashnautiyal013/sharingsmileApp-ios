@@ -13,23 +13,38 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
-    <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
+    <ion-header-bar class="bar-stableleft"><ion-item menu-close href="#/app/postexperience"><i class="fa fa-share-square-o"></i>
+         
         </ion-item>
-        <ion-item menu-close href="#/app/goodnews">
+    <div class="circle"><img class="user"src="img/akash.png"></div>
+    <ion-item menu-close href="#/app/setting"><i class="fa fa-cog"></i>
+         
+        </ion-item>
+   
+      <h1 class="username">Hi ! Akash</h1>
+    </ion-header-bar>
+    <ion-content class="menucontent">
+      <ion-list>
+        
+         <ion-item menu-close href="#/app/home"><i class="fa fa-home fa-2x"></i>
+         home
+        </ion-item>
+        <ion-item menu-close href="#/app/goodnews"><i class="fa fa-newspaper-o fa-2x"></i>
           Good news
         </ion-item>
-        <ion-item menu-close href="#/app/myproject">
+        <ion-item menu-close href="#/app/myproject"><i class="fa fa-area-chart fa-2x"></i>
          My project
         </ion-item>
-        <ion-item menu-close href="#/app/policiess">
+        <ion-item menu-close href="#/app/policies"><i class="fa fa-university fa-2x"></i>
           policies
         </ion-item>
+        <ion-item menu-close ng-click="login()"><i class="fa fa-sign-in fa-2x"></i>
+          Login
+        </ion-item>
+        <ion-item menu-close ng-click="Signup()"><i class="fa fa-pencil fa-2x"></i>
+          Signup
+        </ion-item>
+        
       </ion-list>
     </ion-content>
   </ion-side-menu>

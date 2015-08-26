@@ -32,11 +32,28 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.home', {
+    url: '/home',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/home.html'
+      }
+    }
+  })
   .state('app.goodnews', {
     url: '/goodnews',
     views: {
       'menuContent': {
         templateUrl: 'templates/goodnews.html'
+      }
+    }
+  })
+  .state('app.signup', {
+    url: '/signup',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/signup.html'
+       
       }
     }
   })
@@ -46,6 +63,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent': {
           templateUrl: 'templates/myproject.html'
+        }
+      }
+    })
+  .state('app.postexperience', {
+      url: '/postexperience',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/postexperience.html'
+        }
+      }
+    })
+    .state('app.setting', {
+      url: '/setting',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/setting.html'
         }
       }
     })
@@ -69,5 +102,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/policies');
+  $urlRouterProvider.otherwise('/app/home');
 });

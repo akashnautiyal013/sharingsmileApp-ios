@@ -19,6 +19,7 @@ angular.module('starter.controllers', [])
     $scope.modal = modal;
   });
 
+ 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
@@ -28,6 +29,8 @@ angular.module('starter.controllers', [])
   $scope.login = function() {
     $scope.modal.show();
   };
+  
+   
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {

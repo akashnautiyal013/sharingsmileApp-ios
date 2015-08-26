@@ -1,0 +1,73 @@
+<ion-view view-title="Share Experience">
+  <ion-content>
+    
+    <div class="experiencetimeline" >
+        
+
+   <div class="shareexperienceprofilefirst" onclick="this.classList.add('selected')" onmouseout="this.classList.remove('selected')">
+   
+    <img class="shareexperienceavatar" src="/img/akash.png" onclick="this.classList.add('active')" onmouseout="this.classList.remove('active')" />
+    <div class="ring ring-num1"></div>
+    <div class="ring ring-num2"></div>
+    <div class="ring ring-num3"></div>
+    <div class="bubble">
+      <p><span class="aboutuser">
+        {{img.user}}<br>
+        {{user.about}}<br>
+        {{user.address}}<br>
+        I can't do this alone
+      </span></p>
+    </div>
+  </div>
+   </div>
+
+<div class="wrapper">
+
+
+        <div class="card radius shadowDepth1">
+
+        
+
+          <div class="card__image border-tlr-radius">
+            <img src="/img/akash.png" alt="image" class="border-tlr-radius">
+                </div>
+
+          <div class="card__content card__padding">
+                    <div class="card__share">
+
+                        <div class="card__social">  
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                    </div>
+
+            <div class="card__meta">
+              <a href="#">{{img.ngoname}}</a>
+                        <time>{{img.date}}</time>
+            </div>
+
+            <article class="card__article">
+              <h2 class="post"><a href="#">Material Design Card - For Blog Post Article</a></h2>
+
+              <p class="experiencepost">{{img.contents}}</p>
+            </article>
+          </div>
+
+          <div class="card__action">
+            
+            <div class="card__author">
+              <img src="/img/akash.png" alt="user">
+              <div class="card__author-content">
+                By <a href="#">Akash</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+            
+      </div>
+  </ion-content>
+</ion-view>
