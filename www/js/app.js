@@ -40,6 +40,31 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.donate', {
+    url: '/donate',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/donate.html',
+        controller:'donateCtrl'
+      }
+    }
+  })
+  .state('app.volunteer', {
+    url: '/volunteer',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/volunteer.html'
+      }
+    }
+  })
+  .state('app.ngomicrosite', {
+    url: '/ngomicrosite',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/ngomicrosite.html'
+      }
+    }
+  })
   .state('app.goodnews', {
     url: '/goodnews',
     views: {

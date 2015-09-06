@@ -54,6 +54,15 @@ angular.module('starter.controllers', [])
     { title: 'rular area development', id: 6 }
   ];
 })
-
+.controller('donateCtrl', function($scope) {
+  $scope.categories = [
+    { title: 'child education', id: 1 },
+    { title: 'women impowermwnt', id: 2 },
+    { title: 'oldies goldies', id: 3 },
+    { title: 'skill development', id: 4 },
+    { title: 'helth care', id: 5 },
+    { title: 'rular area development', id: 6 }
+  ];
+})
 .controller('policieCtrl', function($scope, $stateParams) {
 });
