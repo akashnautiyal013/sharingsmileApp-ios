@@ -43,6 +43,19 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
+.controller('ngomicrositeCtrl', function($scope, $stateParams){
+
+})
+.controller('ngolistingCtrl', function($scope) {
+  $scope.ngos = [
+    { title: 'nav yuvak mangal dal', id: 1 },
+    { title: 'sharing smiles', id: 2 },
+    { title: 'smile foundation', id: 3 },
+    { title: 'smile train', id: 4 },
+    { title: 'redcode', id: 5 },
+    { title: 'mahilya mangal', id: 6 }
+  ];
+})
 
 .controller('policiesCtrl', function($scope) {
   $scope.policies = [
@@ -55,6 +68,16 @@ angular.module('starter.controllers', [])
   ];
 })
 .controller('donateCtrl', function($scope) {
+  $scope.categories = [
+    { title: 'child education', id: 1 },
+    { title: 'women impowermwnt', id: 2 },
+    { title: 'oldies goldies', id: 3 },
+    { title: 'skill development', id: 4 },
+    { title: 'helth care', id: 5 },
+    { title: 'rular area development', id: 6 }
+  ];
+})
+.controller('volunteerCtrl', function($scope) {
   $scope.categories = [
     { title: 'child education', id: 1 },
     { title: 'women impowermwnt', id: 2 },

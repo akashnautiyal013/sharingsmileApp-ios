@@ -49,19 +49,41 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+.state('app.campain', {
+    url: '/campain',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/campain.html',
+        controller:'campainCtrl'
+      }
+    }
+  })
+
   .state('app.volunteer', {
     url: '/volunteer',
     views: {
       'menuContent': {
-        templateUrl: 'templates/volunteer.html'
+        templateUrl: 'templates/volunteer.html',
+        controller:'volunteerCtrl'
       }
     }
   })
-  .state('app.ngomicrosite', {
-    url: '/ngomicrosite',
+
+   .state('app.ngolisting', {
+    url: '/ngolisting',
     views: {
       'menuContent': {
-        templateUrl: 'templates/ngomicrosite.html'
+        templateUrl: 'templates/ngolisting.html',
+        controller:'ngolistingCtrl'
+      }
+    }
+  })
+  .state('app.singlengo', {
+    url: '/ngolisting/:ngoId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/ngomicrosite.html',
+        controller: 'ngomicrositeCtrl'
       }
     }
   })
@@ -107,7 +129,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.policie', {
+    .state('app.policies', {
       url: '/policies',
       views: {
         'menuContent': {
