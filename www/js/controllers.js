@@ -1,7 +1,39 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
+    window.$ = jQuery;
+var image_array = new Array();
+      image_array = [
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/1.jpg', link_url: 'content/our_team/1big.jpg', link_rel: 'prettyPhoto'},
+          // image for the first layer, goes with the text from id="sw0"
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/2.jpg', link_url: 'content/our_team/2big.jpg', link_rel: 'prettyPhoto'},
+          // image for the second layer, goes with the text from id="sw1"
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/3.jpg', link_url: 'content/our_team/3big.jpg', link_rel: 'prettyPhoto'},
+          // image for the third layer, goes with the text from id="sw2"
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/4.jpg', link_url: 'content/our_team/4big.jpg', link_rel: 'prettyPhoto'},
+          // ...
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/5.jpg', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/6.jpg', link_url: 'content/our_team/6big.jpg', link_rel: 'prettyPhoto'},
+        {image: 'http://www.shindiristudio.com/content_slider/content/our_team/7.jpg', link_url: 'content/our_team/7big.jpg', link_rel: 'prettyPhoto'}
+      ];
+      $(document).ready(function(){
+        setTimeout(function() {
+          $('#slider1').content_slider({    // bind plugin to div id="slider1"
+            map : image_array,        // pointer to the image map
+            max_shown_items: 5,       // number of visible circles
+            hv_switch: 0,         // 0 = horizontal slider, 1 = vertical
+            active_item: 0,         // layer that will be shown at start, 0=first, 1=second...
+            wrapper_text_max_height: 450, // height of widget, displayed in pixels
+            middle_click: 1,        // when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+            under_600_max_height: 1200,   // if resolution is below 600 px, set max height of content
+            border_radius:  -1,       // -1 = circle, 0 and other = radius
+            automatic_height_resize: 1,
+            border_on_off: 0,
+            allow_shadow: 0,
+            main_circle_position: 1
+          });
+        }, 1000);
+      });
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),

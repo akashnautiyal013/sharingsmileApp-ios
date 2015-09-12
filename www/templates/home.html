@@ -1,38 +1,39 @@
-<ion-view view-title="Sharing Smiles">
+<ion-view  view-title="Sharing Smiles"  >
+
+  <ion-nav-buttons side="right">
+    <a class="button button-icon ion-android-funnel"></a>
+  </ion-nav-buttons>
+
+
 <ion-content>
  <ion-slide-box on-slide-changed="slideHasChanged($index)">
-  <ion-slide class="firstone">
-
-  
-    	<a href="/#/app/campain"><img class="onemonthonechange" src="/img/onemonth.jpg">
-    	1 Village 1 Month 1 change<br>
-    	by TVF Foundation
-
-</a>
+  <ion-slide>
+    <div class="box blue"><img class="onemonthonechange" src="/img/onemonth.jpg">
+<h1>BLUE</h1></div>
   </ion-slide>
-  <ion-slide  class="secondone">
- 
+  <ion-slide>
+    <div class="box yellow"><img class="onemonthonechange" src="/img/onemonth.jpg">
+<h1>YELLOW</h1></div>
   </ion-slide>
-  <ion-slide  class="thirdone">
-    <div class="box pink"><h1>PINK</h1></div>
+  <ion-slide>
+    <div class="box pink"><img class="onemonthonechange" src="/img/onemonth.jpg">
+<h1>PINK</h1></div>
   </ion-slide>
 </ion-slide-box>
 <h1 class="become">BECOME A</h1>
-<ul class="optionlist">
-	<a href="/#/app/volunteer"><li class="options" >
-		Volunteer
-	</li></a>
-	<li  class="options" >
-		Menter
-
-	</li>
-	
-	<a href="#/app/donate"><li class="options" <i class="fa fa-university fa-2x"></i>
-		Doner
-	</li></a>
-	<li class="options">
-		Philanthropist
-	</li>
-</ul>
+<div class="homebuttons">
+<button class="button button-outline button-positive" href="/#/app/templates/donate.html">
+  Donate 
+</button>
+<button class="button button-outline button-positive">
+  Volunteer
+</button>
+<button class="button button-outline button-positive">
+  Mentor
+</button>
+<button class="button button-outline button-positive">
+  Optional
+</button>
+</div>
 </ion-content>
 </ion-view>
