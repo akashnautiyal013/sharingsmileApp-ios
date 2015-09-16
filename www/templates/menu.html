@@ -13,20 +13,29 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
+  <div class="menuheader">
     <ion-header-bar class="bar-stableleft"><ion-item menu-close href="#/app/postexperience"><i class="fa fa-share-square-o"></i>
          
         </ion-item>
-    <div class="circle"><img class="user"src="img/akash.png"></div>
-    <ion-item menu-close href="#/app/setting"><i class="fa fa-cog"></i>
+         <div class="profile-background" ng-style="{'background-image': 'url(' + user.profilePic + ')'}"></div>
+
+            <div ng-if="user.profilePic" class="profile-pic" ng-style="{'background-image': 'url(' + user.profilePic + ')'}"></div>
+                    <div ng-if="!user.profilePic" class="profile-pic" style="background-image: url(img/akash.png)"></div>
+                
+   <ion-item menu-close href="#/app/setting"><i class="fa fa-cog"></i>
          
         </ion-item>
    
       <h1 class="username">Hi ! Akash</h1>
     </ion-header-bar>
+    </div>
     <ion-content class="menucontent">
       <ion-list>
         
          <ion-item menu-close href="#/app/home"><i class="ion-ios-home-outline"></i>
+         home
+        </ion-item>
+        <ion-item menu-close href="#/app/campain"><i class="ion-ios-home-outline"></i>
          home
         </ion-item>
         <ion-item menu-close href="#/app/goodnews"><i class="ion-ios-paper-outline"></i>
@@ -38,6 +47,9 @@
         <ion-item menu-close href="#/app/policies"><i class="ion-ios-heart-outline"></i>
           policies
         </ion-item>
+         <ion-item menu-close ng-click="login()">
+           Login
+         </ion-item>
        
         
       </ion-list>

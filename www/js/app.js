@@ -125,7 +125,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/setting',
       views: {
         'menuContent': {
-          templateUrl: 'templates/setting.html'
+          templateUrl: 'templates/setting.html',
+          controller: 'settingCtrl'
         }
       }
     })

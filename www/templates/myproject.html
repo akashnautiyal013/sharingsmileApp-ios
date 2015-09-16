@@ -1,33 +1,38 @@
 <ion-view view-title="My Projects">
+<ion-header-bar class="bar-subheader item-input-inset">
+               <ul class="slide-tab">
+            <li ng-class="slideIndex == 0 ? 'current':''"><a href="#" ng-click="activeSlide(0)">EVENTS</a></li>
+            <li ng-class="slideIndex == 1 ? 'current':''"><a href="#" ng-click="activeSlide(1)">NGO</a></li>
+            <li ng-class="slideIndex == 2 ? 'current':''"><a href="#" ng-click="activeSlide(2)">NEWS</a></li>
+        </ul> 
+                  </ion-header-bar>
+    <ion-content>
+      
 
- <ion-slide-box on-slide-changed="slideHasChanged($index)">
-  <ion-slide class="firstone">
-    <div class="box blue"><h1>BLUE</h1></div>
-  </ion-slide>
-  <ion-slide  class="secondone">
-    <div class="box yellow"><h1>YELLOW</h1></div>
-  </ion-slide>
-  <ion-slide  class="thirdone">
-    <div class="box pink"><h1>PINK</h1></div>
-  </ion-slide>
-</ion-slide-box>
-<ion-content>
-<h1 class="become">BECOME A</h1>
-<ul class="optionlist">
-	<li class="options">
-		Volunteer
-	</li>
-	<li  class="options">
-		Menter
 
-	</li>
-	
-	<li class="options">
-		Doner
-	</li>
-	<li class="options">
-		Philanthropist
-	</li>
-</ul>
-</ion-content>
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" class="padding">
+            <ion-slide>
+                <h3>EVENTS</h3>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus pretium leo et dignissim. Nam aliquet sagittis turpis, eu dapibus ante suscipit nec. Cras vel dignissim nibh. Duis consectetur condimentum consequat. Nam ullamcorper congue nisi vel euismod. Nunc a tempus felis. Fusce lobortis scelerisque faucibus. Aliquam id scelerisque felis. Integer posuere magna in porta finibus. Maecenas sit amet quam neque.
+
+Duis gravida volutpat elit, in elementum neque cursus sit amet. Nullam euismod lectus dui, bibendum molestie sapien semper a. Ut sit amet nisi erat. Morbi et odio id est scelerisque porta. Curabitur ut gravida neque. Sed a fermentum ante, eget bibendum tellus. Mauris euismod mauris porttitor euismod cursus. In orci orci, condimentum sed mauris vitae, egestas iaculis erat. Phasellus eget suscipit nisl. Vivamus pulvinar, nibh vel hendrerit molestie, nunc dui sagittis justo, ac maximus turpis nunc eget ex. Vestibulum a risus mi. Proin elementum sem eget hendrerit lobortis. Etiam egestas aliquet nulla a hendrerit. Fusce convallis consequat consequat. Quisque id pellentesque nibh. Sed tempus neque ligula.</h2>
+            </ion-slide>
+            <ion-slide>
+                <h3>NGO</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus pretium leo et dignissim. Nam aliquet sagittis turpis, eu dapibus ante suscipit nec. Cras vel dignissim nibh. Duis consectetur condimentum consequat. Nam ullamcorper congue nisi vel euismod. Nunc a tempus felis. Fusce lobortis scelerisque faucibus. Aliquam id scelerisque felis. Integer posuere magna in porta finibus. Maecenas sit amet quam neque.
+
+Duis gravida volutpat elit, in elementum neque cursus sit amet. Nullam euismod lectus dui, bibendum molestie sapien semper a. Ut sit amet nisi erat. Morbi et odio id est scelerisque porta. Curabitur ut gravida neque. Sed a fermentum ante, eget bibendum tellus. Mauris euismod mauris porttitor euismod cursus. In orci orci, condimentum sed mauris vitae, egestas iaculis erat. Phasellus eget suscipit nisl. Vivamus pulvinar, nibh vel hendrerit molestie, nunc dui sagittis justo, ac maximus turpis nunc eget ex. Vestibulum a risus mi. Proin elementum sem eget hendrerit lobortis. Etiam egestas aliquet nulla a hendrerit. Fusce convallis consequat consequat. Quisque id pellentesque nibh. Sed tempus neque ligula.</p>
+            </ion-slide>
+            <ion-slide>
+                <h3>NEWS</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus pretium leo et dignissim. Nam aliquet sagittis turpis, eu dapibus ante suscipit nec. Cras vel dignissim nibh. Duis consectetur condimentum consequat. Nam ullamcorper congue nisi vel euismod. Nunc a tempus felis. Fusce lobortis scelerisque faucibus. Aliquam id scelerisque felis. Integer posuere magna in porta finibus. Maecenas sit amet quam neque.
+
+Duis gravida volutpat elit, in elementum neque cursus sit amet. Nullam euismod lectus dui, bibendum molestie sapien semper a. Ut sit amet nisi erat. Morbi et odio id est scelerisque porta. Curabitur ut gravida neque. Sed a fermentum ante, eget bibendum tellus. Mauris euismod mauris porttitor euismod cursus. In orci orci, condimentum sed mauris vitae, egestas iaculis erat. Phasellus eget suscipit nisl. Vivamus pulvinar, nibh vel hendrerit molestie, nunc dui sagittis justo, ac maximus turpis nunc eget ex. Vestibulum a risus mi. Proin elementum sem eget hendrerit lobortis. Etiam egestas aliquet nulla a hendrerit. Fusce convallis consequat consequat. Quisque id pellentesque nibh. Sed tempus neque ligula.</p>
+            </ion-slide>
+            
+           
+        </ion-slide-box>
+    </ion-content>
+
+  
 </ion-view>
